@@ -49,7 +49,7 @@
       
       <div class="container" style="display: flex; flex-direction: column; align-items: center;">
         <div>
-            <h1 style="color: red;">WAYBILL</h1>
+            <h1 style="color: red !important;">WAYBILL</h1>
         </div>
         <div>
             <h1>Ohafia - Abuja</h1>
@@ -57,7 +57,7 @@
         </div>
  
         <div>
-            <h3 style="color: red; !important">
+            <h3 style="color: red !important;">
                 DOCUMENTS AND GOODS
             </h3>
         </div>
@@ -76,6 +76,14 @@
       
       `;
 
+      document.getElementById('QuoteBanner').style.backgroundColor = 'red'
+
+      buttons = document.querySelectorAll("a.btn.btn-primary")
+
+      buttonStyle = `background-color: red; border-color: red; `
+      
+      buttons[0].style = buttonStyle
+      buttons[1].style = buttonStyle
 /*     
       button = document.querySelectorAll("img");
 
